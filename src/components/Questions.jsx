@@ -1,6 +1,8 @@
+import Question from "./Question.jsx";
+
 function Questions() {
     return (
-        <div>Questions</div>
+        <Question />
     );
 }
 
