@@ -1,8 +1,9 @@
-import questions from './data.js';
+import { useState } from 'react';
+import data from './data.js';
 
 const App = () => {
 
-  console.log(questions);
+  const [questions, setQuestions] = useState(data);
 
   return <h2>Questions</h2>;
 };
