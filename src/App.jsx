@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import Questions from './components/Questions.jsx';
 import data from './data.js';
 
 const App = () => {
 
   const [questions, setQuestions] = useState(data);
 
-  return <h2>Questions</h2>;
+  return (
+    <Questions />
+  );
 };
 export default App;
