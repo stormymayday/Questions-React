@@ -1,6 +1,17 @@
-function Question() {
+import { useState } from 'react';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+
+function Question({ title, info }) {
+
+    const [showInfo, setShowInfo] = useState(false);
+
     return (
-        <div>Question</div>
+        <article className='question'>
+            <header>
+                <h5>{title}</h5>
+            </header>
+            <p>{info}</p>
+        </article>
     );
 }
 

@@ -7,7 +7,10 @@ const App = () => {
   const [questions, setQuestions] = useState(data);
 
   return (
-    <Questions />
+    <main>
+      <Questions questions={questions} />
+    </main>
+
   );
 };
 export default App;
