@@ -1,7 +1,9 @@
+import Accordion from "@/components/Accordion";
+
 export default function Home() {
     return (
-        <div>
-            <h1>Questions</h1>
-        </div>
+        <main>
+            <Accordion />
+        </main>
     );
 }
