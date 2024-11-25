@@ -11,12 +11,11 @@ function Accordion() {
 
     return (
         <section className="container">
-            {data.length > 0
-                ? data.map((item) => {
-                      const { id } = item;
-                      return <AccordionItem key={id} item={item} />;
-                  })
-                : null}
+            {data.length &&
+                data.map((item) => {
+                    const { id } = item;
+                    return <AccordionItem key={id} item={item} />;
+                })}
         </section>
     );
 }
